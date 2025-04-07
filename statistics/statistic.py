@@ -3,8 +3,8 @@ from collections import Counter
 from tqdm import tqdm
 import pandas as pd
 
-data_dir = '/cta/mofadata/harvard_dataverse'
-output_dir = './summary_statistics_10percent.xlsx'
+data_dir = ' '
+output_dir = ' '
 
 alpha3_to_full = {i['ccode']:i['country_name'] for i in  json.loads(open('./country_codes2.json','r').read()).values()}
 
