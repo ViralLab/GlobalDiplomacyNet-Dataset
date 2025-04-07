@@ -1,0 +1,1650 @@
+{
+    "USA": {
+        "country_name": "United States of America",
+        "ccode": "USA",
+        "COWcode": 2,
+        "ccode2": "US",
+        "oecd": 1,
+        "acp": 0
+    },
+    "CAN": {
+        "country_name": "Canada",
+        "ccode": "CAN",
+        "COWcode": 20,
+        "ccode2": "CA",
+        "oecd": 1,
+        "acp": 0
+    },
+    "BHM": {
+        "country_name": "Bahamas",
+        "ccode": "BHS",
+        "COWcode": 31,
+        "ccode2": "BS",
+        "oecd": 0,
+        "acp": 1
+    },
+    "CUB": {
+        "country_name": "Cuba",
+        "ccode": "CUB",
+        "COWcode": 40,
+        "ccode2": "CU",
+        "oecd": 0,
+        "acp": 1
+    },
+    "HAI": {
+        "country_name": "Haiti",
+        "ccode": "HTI",
+        "COWcode": 41,
+        "ccode2": "HT",
+        "oecd": 0,
+        "acp": 1
+    },
+    "DOM": {
+        "country_name": "Dominican Republic",
+        "ccode": "DOM",
+        "COWcode": 42,
+        "ccode2": "DO",
+        "oecd": 0,
+        "acp": 1
+    },
+    "JAM": {
+        "country_name": "Jamaica",
+        "ccode": "JAM",
+        "COWcode": 51,
+        "ccode2": "JM",
+        "oecd": 0,
+        "acp": 1
+    },
+    "TRI": {
+        "country_name": "Trinidad and Tobago",
+        "ccode": "TTO",
+        "COWcode": 52,
+        "ccode2": "TT",
+        "oecd": 0,
+        "acp": 1
+    },
+    "BAR": {
+        "country_name": "Barbados",
+        "ccode": "BRB",
+        "COWcode": 53,
+        "ccode2": "BB",
+        "oecd": 0,
+        "acp": 1
+    },
+    "DMA": {
+        "country_name": "Dominica",
+        "ccode": "DMA",
+        "COWcode": 54,
+        "ccode2": "DM",
+        "oecd": 0,
+        "acp": 1
+    },
+    "GRN": {
+        "country_name": "Grenada",
+        "ccode": "GRD",
+        "COWcode": 55,
+        "ccode2": "GD",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SLU": {
+        "country_name": "St. Lucia",
+        "ccode": "LCA",
+        "COWcode": 56,
+        "ccode2": "LC",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SVG": {
+        "country_name": "St. Vincent and the Grenadines",
+        "ccode": "VCT",
+        "COWcode": 57,
+        "ccode2": "VC",
+        "oecd": 0,
+        "acp": 1
+    },
+    "AAB": {
+        "country_name": "Antigua & Barbuda",
+        "ccode": "ATG",
+        "COWcode": 58,
+        "ccode2": "AG",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SKN": {
+        "country_name": "St. Kitts and Nevis",
+        "ccode": "KNA",
+        "COWcode": 60,
+        "ccode2": "KN",
+        "oecd": 0,
+        "acp": 1
+    },
+    "MEX": {
+        "country_name": "Mexico",
+        "ccode": "MEX",
+        "COWcode": 70,
+        "ccode2": "MX",
+        "oecd": 1,
+        "acp": 0
+    },
+    "BLZ": {
+        "country_name": "Belize",
+        "ccode": "BLZ",
+        "COWcode": 80,
+        "ccode2": "BZ",
+        "oecd": 0,
+        "acp": 1
+    },
+    "GUA": {
+        "country_name": "Guatemala",
+        "ccode": "GTM",
+        "COWcode": 90,
+        "ccode2": "GT",
+        "oecd": 0,
+        "acp": 0
+    },
+    "HON": {
+        "country_name": "Honduras",
+        "ccode": "HND",
+        "COWcode": 91,
+        "ccode2": "HN",
+        "oecd": 0,
+        "acp": 0
+    },
+    "SAL": {
+        "country_name": "El Salvador",
+        "ccode": "SLV",
+        "COWcode": 92,
+        "ccode2": "SV",
+        "oecd": 0,
+        "acp": 0
+    },
+    "NIC": {
+        "country_name": "Nicaragua",
+        "ccode": "NIC",
+        "COWcode": 93,
+        "ccode2": "NI",
+        "oecd": 0,
+        "acp": 0
+    },
+    "COS": {
+        "country_name": "Costa Rica",
+        "ccode": "CRI",
+        "COWcode": 94,
+        "ccode2": "CR",
+        "oecd": 0,
+        "acp": 0
+    },
+    "PAN": {
+        "country_name": "Panama",
+        "ccode": "PAN",
+        "COWcode": 95,
+        "ccode2": "PA",
+        "oecd": 0,
+        "acp": 0
+    },
+    "COL": {
+        "country_name": "Colombia",
+        "ccode": "COL",
+        "COWcode": 100,
+        "ccode2": "CO",
+        "oecd": 1,
+        "acp": 0
+    },
+    "VEN": {
+        "country_name": "Venezuela",
+        "ccode": "VEN",
+        "COWcode": 101,
+        "ccode2": "VE",
+        "oecd": 0,
+        "acp": 0
+    },
+    "GUY": {
+        "country_name": "Guyana",
+        "ccode": "GUY",
+        "COWcode": 110,
+        "ccode2": "GY",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SUR": {
+        "country_name": "Suriname",
+        "ccode": "SUR",
+        "COWcode": 115,
+        "ccode2": "SR",
+        "oecd": 0,
+        "acp": 1
+    },
+    "ECU": {
+        "country_name": "Ecuador",
+        "ccode": "ECU",
+        "COWcode": 130,
+        "ccode2": "EC",
+        "oecd": 0,
+        "acp": 0
+    },
+    "PER": {
+        "country_name": "Peru",
+        "ccode": "PER",
+        "COWcode": 135,
+        "ccode2": "PE",
+        "oecd": 0,
+        "acp": 0
+    },
+    "BRA": {
+        "country_name": "Brazil",
+        "ccode": "BRA",
+        "COWcode": 140,
+        "ccode2": "BR",
+        "oecd": 0,
+        "acp": 0
+    },
+    "BOL": {
+        "country_name": "Bolivia",
+        "ccode": "BOL",
+        "COWcode": 145,
+        "ccode2": "BO",
+        "oecd": 0,
+        "acp": 0
+    },
+    "PAR": {
+        "country_name": "Paraguay",
+        "ccode": "PRY",
+        "COWcode": 150,
+        "ccode2": "PY",
+        "oecd": 0,
+        "acp": 0
+    },
+    "CHL": {
+        "country_name": "Chile",
+        "ccode": "CHL",
+        "COWcode": 155,
+        "ccode2": "CL",
+        "oecd": 1,
+        "acp": 0
+    },
+    "ARG": {
+        "country_name": "Argentina",
+        "ccode": "ARG",
+        "COWcode": 160,
+        "ccode2": "AR",
+        "oecd": 0,
+        "acp": 0
+    },
+    "URU": {
+        "country_name": "Uruguay",
+        "ccode": "URY",
+        "COWcode": 165,
+        "ccode2": "UY",
+        "oecd": 0,
+        "acp": 0
+    },
+    "UKG": {
+        "country_name": "United Kingdom",
+        "ccode": "GBR",
+        "COWcode": 200,
+        "ccode2": "GB",
+        "oecd": 0,
+        "acp": 0
+    },
+    "IRE": {
+        "country_name": "Ireland",
+        "ccode": "IRL",
+        "COWcode": 205,
+        "ccode2": "IE",
+        "oecd": 0,
+        "acp": 0
+    },
+    "NTH": {
+        "country_name": "Netherlands",
+        "ccode": "NLD",
+        "COWcode": 210,
+        "ccode2": "NL",
+        "oecd": 0,
+        "acp": 0
+    },
+    "BEL": {
+        "country_name": "Belgium",
+        "ccode": "BEL",
+        "COWcode": 211,
+        "ccode2": "BE",
+        "oecd": 1,
+        "acp": 0
+    },
+    "LUX": {
+        "country_name": "Luxembourg",
+        "ccode": "LUX",
+        "COWcode": 212,
+        "ccode2": "LU",
+        "oecd": 1,
+        "acp": 0
+    },
+    "FRN": {
+        "country_name": "France",
+        "ccode": "FRA",
+        "COWcode": 220,
+        "ccode2": "FR",
+        "oecd": 0,
+        "acp": 0
+    },
+    "MNC": {
+        "country_name": "Monaco",
+        "ccode": "MCO",
+        "COWcode": 221,
+        "ccode2": "MC",
+        "oecd": 0,
+        "acp": 0
+    },
+    "LIE": {
+        "country_name": "Liechtenstein",
+        "ccode": "LIE",
+        "COWcode": 223,
+        "ccode2": "LI",
+        "oecd": 0,
+        "acp": 0
+    },
+    "SWZ": {
+        "country_name": "eSwatini",
+        "ccode": "SWZ",
+        "COWcode": 970,
+        "ccode2": "SZ",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SPN": {
+        "country_name": "Spain",
+        "ccode": "ESP",
+        "COWcode": 230,
+        "ccode2": "ES",
+        "oecd": 0,
+        "acp": 0
+    },
+    "AND": {
+        "country_name": "Andorra",
+        "ccode": "AND",
+        "COWcode": 232,
+        "ccode2": "AD",
+        "oecd": 0,
+        "acp": 0
+    },
+    "POR": {
+        "country_name": "Portugal",
+        "ccode": "PRT",
+        "COWcode": 235,
+        "ccode2": "PT",
+        "oecd": 0,
+        "acp": 0
+    },
+    "GMY": {
+        "country_name": "Germany",
+        "ccode": "DEU",
+        "COWcode": 255,
+        "ccode2": "DE",
+        "oecd": 0,
+        "acp": 0
+    },
+    "GFR": {
+        "country_name": "German Federal Republic",
+        "ccode": "DEU",
+        "COWcode": 260,
+        "ccode2": "DE",
+        "oecd": 0,
+        "acp": 0
+    },
+    "GDR": {
+        "country_name": "German Democratic Republic",
+        "ccode": "DEU",
+        "COWcode": 265,
+        "ccode2": "DE",
+        "oecd": 0,
+        "acp": 0
+    },
+    "POL": {
+        "country_name": "Poland",
+        "ccode": "POL",
+        "COWcode": 290,
+        "ccode2": "PL",
+        "oecd": 1,
+        "acp": 0
+    },
+    "AUS": {
+        "country_name": "Austria",
+        "ccode": "AUT",
+        "COWcode": 305,
+        "ccode2": "AT",
+        "oecd": 1,
+        "acp": 0
+    },
+    "HUN": {
+        "country_name": "Hungary",
+        "ccode": "HUN",
+        "COWcode": 310,
+        "ccode2": "HU",
+        "oecd": 1,
+        "acp": 0
+    },
+    "CZE": {
+        "country_name": "Czechoslovakia",
+        "ccode": "N/A",
+        "COWcode": 315,
+        "ccode2": "Unknown",
+        "oecd": 1,
+        "acp": 0
+    },
+    "CZR": {
+        "country_name": "Czech Republic",
+        "ccode": "CZE",
+        "COWcode": 316,
+        "ccode2": "CZ",
+        "oecd": 0,
+        "acp": 0
+    },
+    "SLO": {
+        "country_name": "Slovakia",
+        "ccode": "SVK",
+        "COWcode": 317,
+        "ccode2": "SK",
+        "oecd": 0,
+        "acp": 0
+    },
+    "ITA": {
+        "country_name": "Italy",
+        "ccode": "ITA",
+        "COWcode": 325,
+        "ccode2": "IT",
+        "oecd": 1,
+        "acp": 0
+    },
+    "MLT": {
+        "country_name": "Malta",
+        "ccode": "MLT",
+        "COWcode": 338,
+        "ccode2": "MT",
+        "oecd": 0,
+        "acp": 0
+    },
+    "ALB": {
+        "country_name": "Albania",
+        "ccode": "ALB",
+        "COWcode": 339,
+        "ccode2": "AL",
+        "oecd": 0,
+        "acp": 0
+    },
+    "MNG": {
+        "country_name": "Montenegro",
+        "ccode": "MNE",
+        "COWcode": 341,
+        "ccode2": "ME",
+        "oecd": 0,
+        "acp": 0
+    },
+    "MAC": {
+        "country_name": "Macedonia",
+        "ccode": "MKD",
+        "COWcode": 343,
+        "ccode2": "MK",
+        "oecd": 0,
+        "acp": 0
+    },
+    "CRO": {
+        "country_name": "Croatia",
+        "ccode": "HRV",
+        "COWcode": 344,
+        "ccode2": "HR",
+        "oecd": 0,
+        "acp": 0
+    },
+    "YUG": {
+        "country_name": "Yugoslavia/Serbia",
+        "ccode": "SRB",
+        "COWcode": 345,
+        "ccode2": "RS",
+        "oecd": 0,
+        "acp": 0
+    },
+    "BOS": {
+        "country_name": "Bosnia and Herzegovina",
+        "ccode": "BIH",
+        "COWcode": 346,
+        "ccode2": "BA",
+        "oecd": 0,
+        "acp": 0
+    },
+    "KOS": {
+        "country_name": "Kosovo",
+        "ccode": "N/A",
+        "COWcode": 347,
+        "ccode2": "Unknown",
+        "oecd": 0,
+        "acp": 0
+    },
+    "SLV": {
+        "country_name": "Slovenia",
+        "ccode": "SVN",
+        "COWcode": 349,
+        "ccode2": "SI",
+        "oecd": 0,
+        "acp": 0
+    },
+    "GRC": {
+        "country_name": "Greece",
+        "ccode": "GRC",
+        "COWcode": 350,
+        "ccode2": "GR",
+        "oecd": 1,
+        "acp": 0
+    },
+    "CYP": {
+        "country_name": "Cyprus",
+        "ccode": "CYP",
+        "COWcode": 352,
+        "ccode2": "CY",
+        "oecd": 0,
+        "acp": 0
+    },
+    "BUL": {
+        "country_name": "Bulgaria",
+        "ccode": "BGR",
+        "COWcode": 355,
+        "ccode2": "BG",
+        "oecd": 0,
+        "acp": 0
+    },
+    "MLD": {
+        "country_name": "Moldova",
+        "ccode": "MDA",
+        "COWcode": 359,
+        "ccode2": "MD",
+        "oecd": 0,
+        "acp": 0
+    },
+    "ROM": {
+        "country_name": "Romania",
+        "ccode": "ROU",
+        "COWcode": 360,
+        "ccode2": "RO",
+        "oecd": 0,
+        "acp": 0
+    },
+    "RUS": {
+        "country_name": "Russia",
+        "ccode": "RUS",
+        "COWcode": 365,
+        "ccode2": "RU",
+        "oecd": 0,
+        "acp": 0
+    },
+    "EST": {
+        "country_name": "Estonia",
+        "ccode": "EST",
+        "COWcode": 366,
+        "ccode2": "EE",
+        "oecd": 1,
+        "acp": 0
+    },
+    "LAT": {
+        "country_name": "Latvia",
+        "ccode": "LVA",
+        "COWcode": 367,
+        "ccode2": "LV",
+        "oecd": 0,
+        "acp": 0
+    },
+    "LIT": {
+        "country_name": "Lithuania",
+        "ccode": "LTU",
+        "COWcode": 368,
+        "ccode2": "LT",
+        "oecd": 0,
+        "acp": 0
+    },
+    "UKR": {
+        "country_name": "Ukraine",
+        "ccode": "UKR",
+        "COWcode": 369,
+        "ccode2": "UA",
+        "oecd": 0,
+        "acp": 0
+    },
+    "BLR": {
+        "country_name": "Belarus",
+        "ccode": "BLR",
+        "COWcode": 370,
+        "ccode2": "BY",
+        "oecd": 0,
+        "acp": 0
+    },
+    "ARM": {
+        "country_name": "Armenia",
+        "ccode": "ARM",
+        "COWcode": 371,
+        "ccode2": "AM",
+        "oecd": 0,
+        "acp": 0
+    },
+    "GRG": {
+        "country_name": "Georgia",
+        "ccode": "GEO",
+        "COWcode": 372,
+        "ccode2": "GE",
+        "oecd": 0,
+        "acp": 0
+    },
+    "AZE": {
+        "country_name": "Azerbaijan",
+        "ccode": "AZE",
+        "COWcode": 373,
+        "ccode2": "AZ",
+        "oecd": 0,
+        "acp": 0
+    },
+    "FIN": {
+        "country_name": "Finland",
+        "ccode": "FIN",
+        "COWcode": 375,
+        "ccode2": "FI",
+        "oecd": 1,
+        "acp": 0
+    },
+    "SWD": {
+        "country_name": "Sweden",
+        "ccode": "SWE",
+        "COWcode": 380,
+        "ccode2": "SE",
+        "oecd": 0,
+        "acp": 0
+    },
+    "NOR": {
+        "country_name": "Norway",
+        "ccode": "NOR",
+        "COWcode": 385,
+        "ccode2": "NO",
+        "oecd": 1,
+        "acp": 0
+    },
+    "DEN": {
+        "country_name": "Denmark",
+        "ccode": "DNK",
+        "COWcode": 390,
+        "ccode2": "DK",
+        "oecd": 0,
+        "acp": 0
+    },
+    "ICE": {
+        "country_name": "Iceland",
+        "ccode": "ISL",
+        "COWcode": 395,
+        "ccode2": "IS",
+        "oecd": 0,
+        "acp": 0
+    },
+    "CAP": {
+        "country_name": "Cape Verde",
+        "ccode": "CPV",
+        "COWcode": 402,
+        "ccode2": "CV",
+        "oecd": 0,
+        "acp": 1
+    },
+    "STP": {
+        "country_name": "Sao Tome and Principe",
+        "ccode": "STP",
+        "COWcode": 403,
+        "ccode2": "ST",
+        "oecd": 0,
+        "acp": 1
+    },
+    "GNB": {
+        "country_name": "Guinea-Bissau",
+        "ccode": "GNB",
+        "COWcode": 404,
+        "ccode2": "GW",
+        "oecd": 0,
+        "acp": 1
+    },
+    "EQG": {
+        "country_name": "Equatorial Guinea",
+        "ccode": "GNQ",
+        "COWcode": 411,
+        "ccode2": "GQ",
+        "oecd": 0,
+        "acp": 1
+    },
+    "GAM": {
+        "country_name": "Gambia",
+        "ccode": "GMB",
+        "COWcode": 420,
+        "ccode2": "GM",
+        "oecd": 0,
+        "acp": 1
+    },
+    "MLI": {
+        "country_name": "Mali",
+        "ccode": "MLI",
+        "COWcode": 432,
+        "ccode2": "ML",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SEN": {
+        "country_name": "Senegal",
+        "ccode": "SEN",
+        "COWcode": 433,
+        "ccode2": "SN",
+        "oecd": 0,
+        "acp": 1
+    },
+    "BEN": {
+        "country_name": "Benin",
+        "ccode": "BEN",
+        "COWcode": 434,
+        "ccode2": "BJ",
+        "oecd": 0,
+        "acp": 1
+    },
+    "MAA": {
+        "country_name": "Mauritania",
+        "ccode": "MRT",
+        "COWcode": 435,
+        "ccode2": "MR",
+        "oecd": 0,
+        "acp": 1
+    },
+    "NIR": {
+        "country_name": "Niger",
+        "ccode": "NER",
+        "COWcode": 436,
+        "ccode2": "NE",
+        "oecd": 0,
+        "acp": 1
+    },
+    "CDI": {
+        "country_name": "Ivory Coast",
+        "ccode": "CIV",
+        "COWcode": 437,
+        "ccode2": "CI",
+        "oecd": 0,
+        "acp": 1
+    },
+    "GUI": {
+        "country_name": "Guinea",
+        "ccode": "GIN",
+        "COWcode": 438,
+        "ccode2": "GN",
+        "oecd": 0,
+        "acp": 1
+    },
+    "BFO": {
+        "country_name": "Burkina Faso",
+        "ccode": "BFA",
+        "COWcode": 439,
+        "ccode2": "BF",
+        "oecd": 0,
+        "acp": 1
+    },
+    "LBR": {
+        "country_name": "Liberia",
+        "ccode": "LBR",
+        "COWcode": 450,
+        "ccode2": "LR",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SIE": {
+        "country_name": "Sierra Leone",
+        "ccode": "SLE",
+        "COWcode": 451,
+        "ccode2": "SL",
+        "oecd": 0,
+        "acp": 1
+    },
+    "GHA": {
+        "country_name": "Ghana",
+        "ccode": "GHA",
+        "COWcode": 452,
+        "ccode2": "GH",
+        "oecd": 0,
+        "acp": 1
+    },
+    "TOG": {
+        "country_name": "Togo",
+        "ccode": "TGO",
+        "COWcode": 461,
+        "ccode2": "TG",
+        "oecd": 0,
+        "acp": 1
+    },
+    "CAO": {
+        "country_name": "Cameroon",
+        "ccode": "CMR",
+        "COWcode": 471,
+        "ccode2": "CM",
+        "oecd": 0,
+        "acp": 1
+    },
+    "NIG": {
+        "country_name": "Nigeria",
+        "ccode": "NGA",
+        "COWcode": 475,
+        "ccode2": "NG",
+        "oecd": 0,
+        "acp": 1
+    },
+    "GAB": {
+        "country_name": "Gabon",
+        "ccode": "GAB",
+        "COWcode": 481,
+        "ccode2": "GA",
+        "oecd": 0,
+        "acp": 1
+    },
+    "CEN": {
+        "country_name": "Central African Republic",
+        "ccode": "CAF",
+        "COWcode": 482,
+        "ccode2": "CF",
+        "oecd": 0,
+        "acp": 1
+    },
+    "CHA": {
+        "country_name": "Chad",
+        "ccode": "TCD",
+        "COWcode": 483,
+        "ccode2": "TD",
+        "oecd": 0,
+        "acp": 1
+    },
+    "CON": {
+        "country_name": "Congo",
+        "ccode": "COG",
+        "COWcode": 484,
+        "ccode2": "CG",
+        "oecd": 0,
+        "acp": 1
+    },
+    "DRC": {
+        "country_name": "Democratic Republic of the Congo",
+        "ccode": "COD",
+        "COWcode": 490,
+        "ccode2": "CD",
+        "oecd": 0,
+        "acp": 1
+    },
+    "UGA": {
+        "country_name": "Uganda",
+        "ccode": "UGA",
+        "COWcode": 500,
+        "ccode2": "UG",
+        "oecd": 0,
+        "acp": 1
+    },
+    "KEN": {
+        "country_name": "Kenya",
+        "ccode": "KEN",
+        "COWcode": 501,
+        "ccode2": "KE",
+        "oecd": 0,
+        "acp": 1
+    },
+    "TAZ": {
+        "country_name": "Tanzania",
+        "ccode": "TZA",
+        "COWcode": 510,
+        "ccode2": "TZ",
+        "oecd": 0,
+        "acp": 1
+    },
+    "ZAN": {
+        "country_name": "Zanzibar",
+        "ccode": "N/A",
+        "COWcode": 511,
+        "ccode2": "Unknown",
+        "oecd": 0,
+        "acp": 0
+    },
+    "BUI": {
+        "country_name": "Burundi",
+        "ccode": "BDI",
+        "COWcode": 516,
+        "ccode2": "BI",
+        "oecd": 0,
+        "acp": 1
+    },
+    "RWA": {
+        "country_name": "Rwanda",
+        "ccode": "RWA",
+        "COWcode": 517,
+        "ccode2": "RW",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SOM": {
+        "country_name": "Somalia",
+        "ccode": "SOM",
+        "COWcode": 520,
+        "ccode2": "SO",
+        "oecd": 0,
+        "acp": 0
+    },
+    "DJI": {
+        "country_name": "Djibouti",
+        "ccode": "DJI",
+        "COWcode": 522,
+        "ccode2": "DJ",
+        "oecd": 0,
+        "acp": 1
+    },
+    "ETH": {
+        "country_name": "Ethiopia",
+        "ccode": "ETH",
+        "COWcode": 530,
+        "ccode2": "ET",
+        "oecd": 0,
+        "acp": 1
+    },
+    "ERI": {
+        "country_name": "Eritrea",
+        "ccode": "ERI",
+        "COWcode": 531,
+        "ccode2": "ER",
+        "oecd": 0,
+        "acp": 1
+    },
+    "ANG": {
+        "country_name": "Angola",
+        "ccode": "AGO",
+        "COWcode": 540,
+        "ccode2": "AO",
+        "oecd": 0,
+        "acp": 0
+    },
+    "MZM": {
+        "country_name": "Mozambique",
+        "ccode": "MOZ",
+        "COWcode": 541,
+        "ccode2": "MZ",
+        "oecd": 0,
+        "acp": 1
+    },
+    "ZAM": {
+        "country_name": "Zambia",
+        "ccode": "ZMB",
+        "COWcode": 551,
+        "ccode2": "ZM",
+        "oecd": 0,
+        "acp": 1
+    },
+    "ZIM": {
+        "country_name": "Zimbabwe",
+        "ccode": "ZWE",
+        "COWcode": 552,
+        "ccode2": "ZW",
+        "oecd": 0,
+        "acp": 1
+    },
+    "MAW": {
+        "country_name": "Malawi",
+        "ccode": "MWI",
+        "COWcode": 553,
+        "ccode2": "MW",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SAF": {
+        "country_name": "South Africa",
+        "ccode": "ZAF",
+        "COWcode": 560,
+        "ccode2": "ZA",
+        "oecd": 0,
+        "acp": 1
+    },
+    "NAM": {
+        "country_name": "Namibia",
+        "ccode": "NAM",
+        "COWcode": 565,
+        "ccode2": "NA",
+        "oecd": 0,
+        "acp": 1
+    },
+    "LES": {
+        "country_name": "Lesotho",
+        "ccode": "LSO",
+        "COWcode": 570,
+        "ccode2": "LS",
+        "oecd": 0,
+        "acp": 1
+    },
+    "BOT": {
+        "country_name": "Botswana",
+        "ccode": "BWA",
+        "COWcode": 571,
+        "ccode2": "BW",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SWA": {
+        "country_name": "Swaziland",
+        "ccode": "SWZ",
+        "COWcode": 572,
+        "ccode2": "SZ",
+        "oecd": 0,
+        "acp": 1
+    },
+    "MAG": {
+        "country_name": "Madagascar",
+        "ccode": "MDG",
+        "COWcode": 580,
+        "ccode2": "MG",
+        "oecd": 0,
+        "acp": 1
+    },
+    "COM": {
+        "country_name": "Comoros",
+        "ccode": "COM",
+        "COWcode": 581,
+        "ccode2": "KM",
+        "oecd": 0,
+        "acp": 1
+    },
+    "MAS": {
+        "country_name": "Mauritius",
+        "ccode": "MUS",
+        "COWcode": 590,
+        "ccode2": "MU",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SEY": {
+        "country_name": "Seychelles",
+        "ccode": "SYC",
+        "COWcode": 591,
+        "ccode2": "SC",
+        "oecd": 0,
+        "acp": 1
+    },
+    "MOR": {
+        "country_name": "Morocco",
+        "ccode": "MAR",
+        "COWcode": 600,
+        "ccode2": "MA",
+        "oecd": 0,
+        "acp": 0
+    },
+    "ALG": {
+        "country_name": "Algeria",
+        "ccode": "DZA",
+        "COWcode": 615,
+        "ccode2": "DZ",
+        "oecd": 0,
+        "acp": 0
+    },
+    "TUN": {
+        "country_name": "Tunisia",
+        "ccode": "TUN",
+        "COWcode": 616,
+        "ccode2": "TN",
+        "oecd": 0,
+        "acp": 0
+    },
+    "LIB": {
+        "country_name": "Libya",
+        "ccode": "LBY",
+        "COWcode": 620,
+        "ccode2": "LY",
+        "oecd": 0,
+        "acp": 0
+    },
+    "SUD": {
+        "country_name": "Sudan",
+        "ccode": "SDN",
+        "COWcode": 625,
+        "ccode2": "SD",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SSD": {
+        "country_name": "South Sudan",
+        "ccode": "SSD",
+        "COWcode": 626,
+        "ccode2": "SS",
+        "oecd": 0,
+        "acp": 0
+    },
+    "IRN": {
+        "country_name": "Iran",
+        "ccode": "IRN",
+        "COWcode": 630,
+        "ccode2": "IR",
+        "oecd": 0,
+        "acp": 0
+    },
+    "TUR": {
+        "country_name": "Turkey",
+        "ccode": "TUR",
+        "COWcode": 640,
+        "ccode2": "TR",
+        "oecd": 1,
+        "acp": 0
+    },
+    "IRQ": {
+        "country_name": "Iraq",
+        "ccode": "IRQ",
+        "COWcode": 645,
+        "ccode2": "IQ",
+        "oecd": 0,
+        "acp": 0
+    },
+    "EGY": {
+        "country_name": "Egypt",
+        "ccode": "EGY",
+        "COWcode": 651,
+        "ccode2": "EG",
+        "oecd": 0,
+        "acp": 0
+    },
+    "SYR": {
+        "country_name": "Syria",
+        "ccode": "SYR",
+        "COWcode": 652,
+        "ccode2": "SY",
+        "oecd": 0,
+        "acp": 0
+    },
+    "LEB": {
+        "country_name": "Lebanon",
+        "ccode": "LBN",
+        "COWcode": 660,
+        "ccode2": "LB",
+        "oecd": 0,
+        "acp": 0
+    },
+    "JOR": {
+        "country_name": "Jordan",
+        "ccode": "JOR",
+        "COWcode": 663,
+        "ccode2": "JO",
+        "oecd": 0,
+        "acp": 0
+    },
+    "ISR": {
+        "country_name": "Israel",
+        "ccode": "ISR",
+        "COWcode": 666,
+        "ccode2": "IL",
+        "oecd": 1,
+        "acp": 0
+    },
+    "SAU": {
+        "country_name": "Saudi Arabia",
+        "ccode": "SAU",
+        "COWcode": 670,
+        "ccode2": "SA",
+        "oecd": 0,
+        "acp": 0
+    },
+    "YAR": {
+        "country_name": "Yemen Arab Republic",
+        "ccode": "YEM",
+        "COWcode": 678,
+        "ccode2": "YE",
+        "oecd": 0,
+        "acp": 0
+    },
+    "YEM": {
+        "country_name": "Yemen",
+        "ccode": "YEM",
+        "COWcode": 679,
+        "ccode2": "YE",
+        "oecd": 0,
+        "acp": 0
+    },
+    "YPR": {
+        "country_name": "Yemen People's Republic",
+        "ccode": "N/A",
+        "COWcode": 680,
+        "ccode2": "Unknown",
+        "oecd": 0,
+        "acp": 0
+    },
+    "KUW": {
+        "country_name": "Kuwait",
+        "ccode": "KWT",
+        "COWcode": 690,
+        "ccode2": "KW",
+        "oecd": 0,
+        "acp": 0
+    },
+    "BAH": {
+        "country_name": "Bahrain",
+        "ccode": "BHR",
+        "COWcode": 692,
+        "ccode2": "BH",
+        "oecd": 0,
+        "acp": 0
+    },
+    "QAT": {
+        "country_name": "Qatar",
+        "ccode": "QAT",
+        "COWcode": 694,
+        "ccode2": "QA",
+        "oecd": 0,
+        "acp": 0
+    },
+    "UAE": {
+        "country_name": "United Arab Emirates",
+        "ccode": "ARE",
+        "COWcode": 696,
+        "ccode2": "AE",
+        "oecd": 0,
+        "acp": 0
+    },
+    "OMA": {
+        "country_name": "Oman",
+        "ccode": "OMN",
+        "COWcode": 698,
+        "ccode2": "OM",
+        "oecd": 0,
+        "acp": 0
+    },
+    "AFG": {
+        "country_name": "Afghanistan",
+        "ccode": "AFG",
+        "COWcode": 700,
+        "ccode2": "AF",
+        "oecd": 0,
+        "acp": 0
+    },
+    "TKM": {
+        "country_name": "Turkmenistan",
+        "ccode": "TKM",
+        "COWcode": 701,
+        "ccode2": "TM",
+        "oecd": 0,
+        "acp": 0
+    },
+    "TAJ": {
+        "country_name": "Tajikistan",
+        "ccode": "TJK",
+        "COWcode": 702,
+        "ccode2": "TJ",
+        "oecd": 0,
+        "acp": 0
+    },
+    "KYR": {
+        "country_name": "Kyrgyzstan",
+        "ccode": "KGZ",
+        "COWcode": 703,
+        "ccode2": "KG",
+        "oecd": 0,
+        "acp": 0
+    },
+    "UZB": {
+        "country_name": "Uzbekistan",
+        "ccode": "UZB",
+        "COWcode": 704,
+        "ccode2": "UZ",
+        "oecd": 0,
+        "acp": 0
+    },
+    "KZK": {
+        "country_name": "Kazakhstan",
+        "ccode": "KAZ",
+        "COWcode": 705,
+        "ccode2": "KZ",
+        "oecd": 0,
+        "acp": 0
+    },
+    "CHN": {
+        "country_name": "China",
+        "ccode": "CHN",
+        "COWcode": 710,
+        "ccode2": "CN",
+        "oecd": 0,
+        "acp": 0
+    },
+    "MON": {
+        "country_name": "Mongolia",
+        "ccode": "MNG",
+        "COWcode": 712,
+        "ccode2": "MN",
+        "oecd": 0,
+        "acp": 0
+    },
+    "TAW": {
+        "country_name": "Taiwan",
+        "ccode": "TWN",
+        "COWcode": 713,
+        "ccode2": "TW",
+        "oecd": 0,
+        "acp": 0
+    },
+    "KOR": {
+        "country_name": "Korea",
+        "ccode": "KOR",
+        "COWcode": 730,
+        "ccode2": "KR",
+        "oecd": 1,
+        "acp": 0
+    },
+    "PRK": {
+        "country_name": "North Korea",
+        "ccode": "PRK",
+        "COWcode": 731,
+        "ccode2": "KP",
+        "oecd": 0,
+        "acp": 0
+    },
+    "ROK": {
+        "country_name": "South Korea",
+        "ccode": "KOR",
+        "COWcode": 732,
+        "ccode2": "KR",
+        "oecd": 0,
+        "acp": 0
+    },
+    "JPN": {
+        "country_name": "Japan",
+        "ccode": "JPN",
+        "COWcode": 740,
+        "ccode2": "JP",
+        "oecd": 1,
+        "acp": 0
+    },
+    "IND": {
+        "country_name": "India",
+        "ccode": "IND",
+        "COWcode": 750,
+        "ccode2": "IN",
+        "oecd": 0,
+        "acp": 0
+    },
+    "BHU": {
+        "country_name": "Bhutan",
+        "ccode": "BTN",
+        "COWcode": 760,
+        "ccode2": "BT",
+        "oecd": 0,
+        "acp": 0
+    },
+    "PAK": {
+        "country_name": "Pakistan",
+        "ccode": "PAK",
+        "COWcode": 770,
+        "ccode2": "PK",
+        "oecd": 0,
+        "acp": 0
+    },
+    "BNG": {
+        "country_name": "Bangladesh",
+        "ccode": "BGD",
+        "COWcode": 771,
+        "ccode2": "BD",
+        "oecd": 0,
+        "acp": 0
+    },
+    "MYA": {
+        "country_name": "Myanmar",
+        "ccode": "MMR",
+        "COWcode": 775,
+        "ccode2": "MM",
+        "oecd": 0,
+        "acp": 0
+    },
+    "SRI": {
+        "country_name": "Sri Lanka",
+        "ccode": "LKA",
+        "COWcode": 780,
+        "ccode2": "LK",
+        "oecd": 0,
+        "acp": 0
+    },
+    "MAD": {
+        "country_name": "Maldives",
+        "ccode": "MDV",
+        "COWcode": 781,
+        "ccode2": "MV",
+        "oecd": 0,
+        "acp": 0
+    },
+    "NEP": {
+        "country_name": "Nepal",
+        "ccode": "NPL",
+        "COWcode": 790,
+        "ccode2": "NP",
+        "oecd": 0,
+        "acp": 0
+    },
+    "THI": {
+        "country_name": "Thailand",
+        "ccode": "THA",
+        "COWcode": 800,
+        "ccode2": "TH",
+        "oecd": 0,
+        "acp": 0
+    },
+    "CAM": {
+        "country_name": "Cambodia",
+        "ccode": "KHM",
+        "COWcode": 811,
+        "ccode2": "KH",
+        "oecd": 0,
+        "acp": 0
+    },
+    "LAO": {
+        "country_name": "Laos",
+        "ccode": "LAO",
+        "COWcode": 812,
+        "ccode2": "LA",
+        "oecd": 0,
+        "acp": 0
+    },
+    "DRV": {
+        "country_name": "Vietnam",
+        "ccode": "VNM",
+        "COWcode": 816,
+        "ccode2": "VN",
+        "oecd": 0,
+        "acp": 0
+    },
+    "RVN": {
+        "country_name": "Republic of Vietnam",
+        "ccode": "N/A",
+        "COWcode": 817,
+        "ccode2": "Unknown",
+        "oecd": 0,
+        "acp": 0
+    },
+    "MAL": {
+        "country_name": "Malaysia",
+        "ccode": "MYS",
+        "COWcode": 820,
+        "ccode2": "MY",
+        "oecd": 0,
+        "acp": 0
+    },
+    "SIN": {
+        "country_name": "Singapore",
+        "ccode": "SGP",
+        "COWcode": 830,
+        "ccode2": "SG",
+        "oecd": 0,
+        "acp": 0
+    },
+    "BRU": {
+        "country_name": "Brunei",
+        "ccode": "BRN",
+        "COWcode": 835,
+        "ccode2": "BN",
+        "oecd": 0,
+        "acp": 0
+    },
+    "PHI": {
+        "country_name": "Philippines",
+        "ccode": "PHL",
+        "COWcode": 840,
+        "ccode2": "PH",
+        "oecd": 0,
+        "acp": 0
+    },
+    "INS": {
+        "country_name": "Indonesia",
+        "ccode": "IDN",
+        "COWcode": 850,
+        "ccode2": "ID",
+        "oecd": 0,
+        "acp": 0
+    },
+    "ETM": {
+        "country_name": "East Timor",
+        "ccode": "TLS",
+        "COWcode": 860,
+        "ccode2": "TL",
+        "oecd": 0,
+        "acp": 0
+    },
+    "AUL": {
+        "country_name": "Australia",
+        "ccode": "AUS",
+        "COWcode": 900,
+        "ccode2": "AU",
+        "oecd": 0,
+        "acp": 0
+    },
+    "PNG": {
+        "country_name": "Papua New Guinea",
+        "ccode": "PNG",
+        "COWcode": 910,
+        "ccode2": "PG",
+        "oecd": 0,
+        "acp": 1
+    },
+    "NEW": {
+        "country_name": "New Zealand",
+        "ccode": "NZL",
+        "COWcode": 920,
+        "ccode2": "NZ",
+        "oecd": 0,
+        "acp": 0
+    },
+    "VAN": {
+        "country_name": "Vanuatu",
+        "ccode": "VUT",
+        "COWcode": 935,
+        "ccode2": "VU",
+        "oecd": 0,
+        "acp": 1
+    },
+    "SOL": {
+        "country_name": "Solomon Islands",
+        "ccode": "SLB",
+        "COWcode": 940,
+        "ccode2": "SB",
+        "oecd": 0,
+        "acp": 1
+    },
+    "KIR": {
+        "country_name": "Kiribati",
+        "ccode": "KIR",
+        "COWcode": 946,
+        "ccode2": "KI",
+        "oecd": 0,
+        "acp": 1
+    },
+    "TUV": {
+        "country_name": "Tuvalu",
+        "ccode": "TUV",
+        "COWcode": 947,
+        "ccode2": "TV",
+        "oecd": 0,
+        "acp": 1
+    },
+    "FIJ": {
+        "country_name": "Fiji",
+        "ccode": "FJI",
+        "COWcode": 950,
+        "ccode2": "FJ",
+        "oecd": 0,
+        "acp": 1
+    },
+    "TON": {
+        "country_name": "Tonga",
+        "ccode": "TON",
+        "COWcode": 955,
+        "ccode2": "TO",
+        "oecd": 0,
+        "acp": 1
+    },
+    "NAU": {
+        "country_name": "Nauru",
+        "ccode": "NRU",
+        "COWcode": 970,
+        "ccode2": "NR",
+        "oecd": 0,
+        "acp": 1
+    },
+    "MSI": {
+        "country_name": "Marshall Islands",
+        "ccode": "MHL",
+        "COWcode": 983,
+        "ccode2": "MH",
+        "oecd": 0,
+        "acp": 1
+    },
+    "PAL": {
+        "country_name": "Palau",
+        "ccode": "PLW",
+        "COWcode": 986,
+        "ccode2": "PW",
+        "oecd": 0,
+        "acp": 1
+    },
+    "FSM": {
+        "country_name": "Federated States of Micronesia",
+        "ccode": "FSM",
+        "COWcode": 987,
+        "ccode2": "FM",
+        "oecd": 0,
+        "acp": 1
+    },
+    "WSM": {
+        "country_name": "Samoa",
+        "ccode": "WSM",
+        "COWcode": 990,
+        "ccode2": "WS",
+        "oecd": 0,
+        "acp": 1
+    },
+    "COK": {
+        "country_name": "Cook Islands",
+        "ccode": "COK",
+        "COWcode": 990,
+        "ccode2": "CK",
+        "oecd": 0,
+        "acp": 1
+    },
+    "NIU": {
+        "country_name": "Niue",
+        "ccode": "NIU",
+        "COWcode": 990,
+        "ccode2": "NU",
+        "oecd": 0,
+        "acp": 1
+    },
+    "XKX": {
+        "country_name": "Kosovo",
+        "ccode": "XKX",
+        "COWcode": 347,
+        "ccode2": "XK",
+        "oecd": 0,
+        "acp": 0
+    },
+    "PSE": {
+        "country_name": "Palestine",
+        "ccode": "PSE",
+        "COWcode": 1200,
+        "ccode2": "PS",
+        "oecd": 0,
+        "acp": 0
+    }
+}
