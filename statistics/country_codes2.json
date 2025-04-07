@@ -1646,5 +1646,14 @@
         "ccode2": "PS",
         "oecd": 0,
         "acp": 0
+    },
+    "CHE": {
+        "country_name": "Switzerland",
+        "ccode": "CHE",
+        "COWcode": 225,
+        "ccode2": "CH",
+        "oecd": 1,
+        "acp": 0
     }
+    
 }
