@@ -3,8 +3,8 @@ from collections import Counter
 from tqdm import tqdm
 import pandas as pd
 
-data_dir = '' #'/cta/mofadata/harvard_dataverse'
-output_dir = './statistic_10percent.xlsx'
+data_dir = ' '
+output_dir = ' '
 
 alpha3_to_full = {i['ccode']:i['country_name'] for i in  json.loads(open('./country_codes2.json','r').read()).values()}
 
@@ -17,7 +17,7 @@ def make_statistic():
         
         country_dict['Country Name'] = alpha3_to_full[country[:3]] if country[:3] in alpha3_to_full else ''
         country_dict['Country Code'] = country[:3]
-        country_dict['Instution'] = country[4:8]
+        country_dict['Instution'] = country[4:]
 
         parsed_data= [json.loads(l) for l in open(f'{data_dir}/{country}/news.jsonl','r').read().splitlines()]
         country_dict['News Count']= len(parsed_data)
@@ -33,7 +33,7 @@ def make_statistic():
 
         # Images are 100% where as the data is currently 10%
         parsed_data_ids=list(map(lambda x:x['id'], parsed_data))
-        imgs = [json.loads(i) for i in open(f'/cta/mofadata/harvard_dataverse/{country}/images.jsonl').read().splitlines()]
+        imgs = [json.loads(i) for i in open(f'{data_dir}/{country}/images.jsonl').read().splitlines()]
         imgs = [i for i in imgs if i['news-id'] in parsed_data_ids]
         country_dict['Avg. Image per News'] = round(len(imgs)/country_dict['News Count'],2)
 
@@ -48,7 +48,7 @@ def make_statistic():
 
 
     df= pd.DataFrame(rows)
-    df.to_excel(output_dir,index=False)
+    df.sort_values(by=['Country Code','Instution']).to_excel(output_dir,index=False)
 
 if __name__=='__main__':
     make_statistic()
