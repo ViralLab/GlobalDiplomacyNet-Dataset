@@ -27,7 +27,7 @@ plot_style= {'color':'grey'}
 lowy_66 = ['CHN', 'USA', 'TUR', 'JPN', 'FRA', 'RUS', 'GBR', 'DEU', 'ITA', 'BRA', 'IND', 'ESP', 'KOR', 'MEX', 'CAN', 'ARG', 'NLD', 'HUN', 'POL', 'GRC', 'IDN', 'SAU', 'PRT', 'AUS', 'PAK', 'CHL', 'CZE', 'COL', 'ZAF', 'BEL', 'TWN', 'ISR', 'MYS', 'AUT', 'SWE', 'IRL', 'THA', 'VNM', 'PHL', 'NOR', 'FIN', 'DNK', 'BGD', 'NZL', 'LTU', 'SVN', 'CRI', 'MNG', 'SGP', 'LVA', 'EST', 'MMR', 'LUX', 'PRK', 'KHM', 'BRN', 'NPL', 'LAO', 'TLS', 'ISL', 'PNG', 'BTN', 'SUI', 'SVK', 'LKA']
 
 
-### function I use to get absolute paths for country files
+### Helper functions
 def get_countries(data_directory:str, include:List[str]|None=None, exclude:List[str]|None=None)->List[str]:
     # for replication no need to use the include and exclude parameters
     all_countries = list(map(lambda x: f'{data_directory}/{x}',os.listdir(data_directory)))
@@ -48,14 +48,12 @@ def group_date_series(dates_list:List[str])->Dict[str,int]:
     """Groups the date list into years"""
     return dict(sorted(Counter(map(lambda x: datetime.strptime(x,'%Y/%m/%d').strftime('%Y'), dates_list)).items()))
 
-
 def fill_year_dict(count_dict:dict, start:int, end:int=2024)->Dict[str,int]:
     for y in range(start,end+1):
         if str(y) not in count_dict:
             count_dict[str(y)]=0
     # removing outside the range
     count_dict= {k:v for k,v in count_dict.items() if str(start)<=k and k<=str(end)}
-
     return dict(sorted(count_dict.items()))
 
 def merge_and_sum(dict1:Dict[str,Any], dict2:Dict[str,Any])->Dict[str,Any]:
@@ -63,13 +61,6 @@ def merge_and_sum(dict1:Dict[str,Any], dict2:Dict[str,Any])->Dict[str,Any]:
 
 
 def create_combined_dict(count_dicts:Dict[str,Any], level:int=1)->Dict[str,Any]:
-    """
-    Merges the countries in the counts_dicts
-    
-    if level == combines _mofa and _exec
-
-    else combines _2 _3
-    """
     stem= 7 if level==0 else 3 
 
     merged_dict= dict()
@@ -82,7 +73,6 @@ def create_combined_dict(count_dicts:Dict[str,Any], level:int=1)->Dict[str,Any]:
             merged_dict[k_stem] = d
     
     return dict(sorted(merged_dict.items()))
-
 
 def get_country_dicts(countries:List[str]):
     """From the list of input paths, countries, returns the year counts"""
@@ -167,7 +157,6 @@ def plot_heatmap(country_dict:dict, begin:int, country_limitations:list|None=low
 
 
 def plot_languages(lang_dict, ax):
-    # raise NotImplemented('languages')
     ax.bar(x=lang_dict.keys(), height=lang_dict.values(), **plot_style)
     ax.set_yscale('log')
     ax.set_xlabel('')
@@ -196,7 +185,6 @@ def plot_start_years(country_dicts:str, ax:Axes, begin:int=1990):
     ax.set_yticklabels(ax.get_yticklabels(), **font_dict)
 
 def plot_content_length_dist(length_distribution:list, ax:Axes):
-    # raise NotImplemented('length dist')
     ax.hist(x=np.log10(list(map(lambda x: x+1,length_distribution))), bins=100, **plot_style )
     ax.set_yscale('log')
     ax.set_xticklabels([f'$10^{int(t)}$' for t in ax.get_xticks()], **font_dict)
