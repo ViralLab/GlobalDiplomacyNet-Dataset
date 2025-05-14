@@ -276,8 +276,6 @@ def plot_female_percentage(countries:List[str], ax_list:list[Axes], fig:Figure, 
         else:
             ax.set_xticklabels([f"{label:.1f}" for label in intervals], **tick_text)
             ax.set_xlabel("Percentage of Female Representation", **label_text,labelpad=8)#, labelpad=15)
-    ax_list[0].text(-0.05, 1.12, 'b)', transform=ax_list[0].transAxes, 
-    size=16, va='top', ha='right')
 
 #### c)
 # TODO: do the c) figure
