@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.axes import Axes
 from matplotlib.figure import Figure
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+from matplotlib.patches import Patch
 import seaborn as sns
 
 import requests
@@ -26,6 +27,8 @@ tick_text= {'size':12}
 label_text= {'size':14}
 title_text= {'size':14}
 
+categories = ['F', 'PF', 'NF']
+category_labels = {'F': 'Free', 'PF': 'Partly Free', 'NF': 'Not Free'}
 
 freedom_colors = {
     'F': (0, 0, 1, 1),    # Blue for Free
@@ -33,9 +36,6 @@ freedom_colors = {
     'NF': (1, 0, 0, 1),    # Red for Not Free
     'No Data': (0.5, 0.5, 0.5, 1)  # Default gray for No Data
 }
-
-categories = ['F', 'PF', 'NF']
-category_labels = {'F': 'Free', 'PF': 'Partly Free', 'NF': 'Not Free'}
 
 
 ### Helper functions
@@ -66,21 +66,22 @@ def fetch_flag_image(country_code):
 
     return img
 
-# TODO: maybe give up and use a dataframe
-def get_female_ratios(countries:List[str],min_total_people=100,min_total_images=100):
+
+def get_image_ratios(countries:List[str],min_total_people=100,min_total_images=100)->Dict[str,Any]:
     country_gender_ratio= dict()
     for country in countries:
 
         country_name=country.split('/')[-1][:3]
 
         image_file=open(f'{country}/images.jsonl','r').read().splitlines()
-        total_images=len(image_file)
+        # filtering for images with people in it only
+        image_json_list = list(filter(lambda x: x['male-count'] + x['female-count'] > 0, map(lambda x:json.loads(x), image_file)))
+        total_images=len(image_json_list)
 
-        image_json_list = list(map(lambda x:json.loads(x), image_file))
         male_count = sum(map(lambda x:x['male-count'],image_json_list))
         female_count = sum(map(lambda x:x['female-count'],image_json_list))
 
-        # poor mans dataframe
+        # alpha male dataframe
         if country_name in country_gender_ratio:
             current_values = country_gender_ratio[country_name]
             country_gender_ratio[country_name] = {'male-count':current_values['male-count'] + male_count,
@@ -91,11 +92,10 @@ def get_female_ratios(countries:List[str],min_total_people=100,min_total_images=
                                                   'female-count':female_count, 
                                                   'total-images':total_images}
 
-    country_gender_ratio= {k:v['female-count']/(v['female-count']+v['male-count'])*100 for k,v in country_gender_ratio.items()
-                            if v['female-count']+v['male-count']>= min_total_people and v['total-images']>=min_total_images
-                            }
+    country_gender_ratio= {k:v for k,v in country_gender_ratio.items()
+                            if v['female-count']+v['male-count']>= min_total_people and v['total-images']>=min_total_images}
 
-    return dict(sorted(country_gender_ratio.items(), key=lambda x:x[1],reverse=True))
+    return country_gender_ratio
 
 
 def get_freedom_house_classification(country_codes:List[str])->Dict[str,Any]:
@@ -229,7 +229,7 @@ def fetch_flag_image_with_border(country_code, border_color):
 
 # I'm trying to make this function general in most places, but it will never change
 def plot_female_percentage(countries:List[str], ax_list:list[Axes], fig:Figure, zoom:float=0.25)->None:
-    countries_female_ratio = get_female_ratios(countries)
+    countries_female_ratio = {k:v['female-count']/(v['female-count']+v['male-count'])*100 for k,v in get_image_ratios(countries).items()}
     freedom_classifications = get_freedom_house_classification(countries_female_ratio.keys())
 
     min_ratio = np.floor(min(countries_female_ratio.values()))  # Round down to nearest integer
@@ -278,4 +278,152 @@ def plot_female_percentage(countries:List[str], ax_list:list[Axes], fig:Figure, 
             ax.set_xlabel("Percentage of Female Representation", **label_text,labelpad=8)#, labelpad=15)
 
 #### c)
-# TODO: do the c) figure
+def assign_grids(country_stats:Dict[str,Any])->List[Any]:
+
+    # Determining max value for axes
+    max_avg_value = max(max(v[0] for v in country_stats.values()), max(v[1] for v in country_stats.values()))
+
+    # Create an 8x8 grid
+    num_cells = 8
+    cell_size = max_avg_value / num_cells
+
+    # Assigning countries to grid cells with limit of 30 countries per cell
+    grid = [[[] for _ in range(num_cells)] for _ in range(num_cells)]
+
+    # Assigning to grids
+    for country_code, stats in country_stats.items():
+        avg_female = stats[0]
+        avg_male = stats[1]
+        col = min(int(avg_female // cell_size), num_cells - 1)
+        row = min(int(avg_male // cell_size), num_cells - 1)
+        grid[row][col].append((country_code, stats))
+
+    for row_idx in range(num_cells):
+        for col_idx in range(num_cells):
+            cell = grid[row_idx][col_idx]
+            # Sort countries in descending order by image_count
+            cell_sorted = sorted(cell, key=lambda x: x[1][-1], reverse=True)
+            # Limit to top 30 countries
+            grid[row_idx][col_idx] = cell_sorted[:30]
+    
+    return grid
+
+
+# TODO: make this less complex, divide into smaller pieces
+def plot_male_female_per_image(countries:List[str], ax:Axes)->None:
+
+    # Calculate avg. males and females on images
+    country_stats={k:(
+                        v['female-count']/v['total-images'],
+                        v['male-count']/v['total-images'], 
+                        v['total-images']
+                    ) for k,v in get_image_ratios(countries).items()}
+    # Freedom score for bounding boxes
+    freedom_status =get_freedom_house_classification(country_stats.keys())
+    # Grouping them on a grid
+    grid = assign_grids(country_stats)
+
+
+    #################
+    # Drawing grid lines
+    for i in range(8):
+        ax.axhline(y=i, color='gray', linestyle='--', linewidth=1)
+        ax.axvline(x=i, color='gray', linestyle='--', linewidth=1)
+
+    # Setting axes limits and labels
+    ax.set_xlim(0, 2.5)
+    ax.set_ylim(1, 8)
+    ax.set_aspect('auto')
+    ax.set_xticks([0, 1, 2, 2.5])
+    ax.set_yticks(range(1, 9))
+    ax.set_xticklabels(['0', '1', '2', '2.5'])
+    ax.set_facecolor('white')  # Set white background
+
+    # x=y line for female=male
+    ax.plot([1, 2.5], [1, 2.5], 'r--', linewidth=1.5)
+
+
+    #################
+    # Adding flags to each grid cell
+    for row_idx, row in enumerate(grid):
+        for col_idx, cell in enumerate(row):
+            if col_idx >= 3:  # Skip columns beyond index 2
+                continue    # there aren't any anyhow
+                
+            start_x = col_idx
+            start_y = row_idx
+
+            flags_per_row = 6
+            flags_per_col = 5
+            max_flags_per_cell = flags_per_row * flags_per_col
+
+            num_flags = min(len(cell), max_flags_per_cell)
+
+            # Calculate spacing
+            h_padding = 0.1
+            h_usable_space = 1 - (2 * h_padding)
+            h_spacing = h_usable_space / (flags_per_row - 1) if flags_per_row > 1 else 0
+
+            v_padding = 0.15
+            v_usable_space = 1 - (2 * v_padding)
+            v_spacing = v_usable_space / (flags_per_col - 1) if flags_per_col > 1 else 0
+
+            x_positions = [start_x + h_padding + (i * h_spacing) for i in range(flags_per_row)]
+            y_positions = [start_y + (1 - v_padding) - (i * v_spacing) for i in range(flags_per_col)]
+
+            for i, (country_code, stats) in enumerate(cell[:num_flags]):
+                avg_female = stats[0]
+                avg_male = stats[1]
+                
+                if i >= max_flags_per_cell:
+                    break
+
+                current_row = i // flags_per_row
+                current_col = i % flags_per_row
+
+                x_pos = x_positions[current_col]
+                y_pos = y_positions[current_row]
+
+                try:
+                    clean_code = country_code.replace("_", " ").strip().upper()
+                    status = freedom_status.get(clean_code, 'Unknown')
+                    border_color = freedom_colors.get(status, (0.5, 0.5, 0.5, 1))
+
+                    flag_img = fetch_flag_image_with_border(country_code, border_color)
+                    imagebox = OffsetImage(flag_img, zoom=0.12)
+                    ab = AnnotationBbox(imagebox, (x_pos, y_pos), frameon=False)
+                    ax.add_artist(ab)
+                except Exception as e:
+                    print(f"Error processing {country_code}:")
+                    # print(f"Error details: {str(e)}")
+                    continue
+
+
+    #################
+    # Final plot tweaks
+    ax.set_xlabel("Avg. # of Females per Image", **label_text, labelpad=8)
+    ax.set_ylabel("Avg. # of Males per Image", **label_text, labelpad=8)
+    ax.tick_params(axis='both', which='major', **tick_text)
+    ax.grid(False)
+
+    ax.spines['left'].set_visible(True)
+    ax.spines['bottom'].set_visible(True)
+    ax.spines['left'].set_linewidth(1)
+    ax.spines['bottom'].set_linewidth(1)
+    ax.set_axisbelow(False)  # This ensures axes are drawn on top of grid
+
+    ax.set_xticklabels(ax.get_xticklabels(),**tick_text)
+    ax.set_yticklabels(ax.get_yticklabels(),**tick_text)
+    
+    legend_elements = [
+        Patch(facecolor=freedom_colors['F'], label='Free'),
+        Patch(facecolor=freedom_colors['PF'], label='Partly Free'),
+        Patch(facecolor=freedom_colors['NF'], label='Not Free'),
+        # Patch(facecolor=freedom_colors['Unknown'], label='No Data')
+    ]
+
+    plt.legend(handles=legend_elements, ncol=1, 
+            bbox_to_anchor=(1, 0.00),  # x=0.98 for slight padding from right, y=0.15 to be above x-axis
+            loc='lower right', 
+            fontsize=12,
+            markerfirst=False)
