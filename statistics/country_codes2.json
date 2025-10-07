@@ -380,7 +380,7 @@
         "ccode": "DEU",
         "COWcode": 255,
         "ccode2": "DE",
-        "oecd": 0,
+        "oecd": 1,
         "acp": 0
     },
 
@@ -1627,4 +1627,5 @@
     }
     
 }
+
 
