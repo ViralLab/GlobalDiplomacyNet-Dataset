@@ -1,3 +1,8 @@
+############################################################
+# There are some redundant functions that are not being used
+# They are special visualizations woooOOOooo 👻 ooohooo
+############################################################
+
 import json, os
 
 import numpy as np
@@ -81,7 +86,7 @@ def get_image_ratios(countries:List[str],min_total_people=100,min_total_images=1
         male_count = sum(map(lambda x:x['male-count'],image_json_list))
         female_count = sum(map(lambda x:x['female-count'],image_json_list))
 
-        # alpha male dataframe
+        # refusing pandas dataframe usage
         if country_name in country_gender_ratio:
             current_values = country_gender_ratio[country_name]
             country_gender_ratio[country_name] = {'male-count':current_values['male-count'] + male_count,
@@ -198,7 +203,7 @@ def assign_categories(ratios, classifications, midpoints):
 
     return dict(category_data)
 
-def fetch_flag_image_with_border(country_code, border_color):
+def fetch_flag_image_with_border(country_code, border_color, draw_box:bool=False):
     """Fetch flag image using the country code"""
     iso2_code = get_alpha2_code(country_code)
     
@@ -221,9 +226,10 @@ def fetch_flag_image_with_border(country_code, border_color):
     border_size = 15
     bordered_img = Image.new("RGBA", (standard_size[0] + 2 * border_size, standard_size[1] + 2 * border_size), (0, 0, 0, 0))
     draw = ImageDraw.Draw(bordered_img)
-    draw.rectangle(
-        [(0, 0), (bordered_img.width - 1, bordered_img.height - 1)], fill=border_rgba, outline=border_rgba
-    )
+    if draw_box:
+        draw.rectangle(
+            [(0, 0), (bordered_img.width - 1, bordered_img.height - 1)], fill=border_rgba, outline=border_rgba
+        )
     bordered_img.paste(img, (border_size, border_size), img)
     return bordered_img
 
@@ -278,6 +284,29 @@ def plot_female_percentage(countries:List[str], ax_list:list[Axes], fig:Figure, 
             ax.set_xlabel("Percentage of Female Representation", **label_text,labelpad=8)#, labelpad=15)
 
 #### c)
+
+def get_gender_ratios(country_list:List[str])->Dict[str,Any]:
+    
+    country_gender_ratio= defaultdict(lambda: defaultdict(list))
+
+    for country in country_list:
+
+        country_name=country.split('/')[-1][:3]
+
+        image_file=list(map(json.loads,open(f'{country}/images.jsonl','r').read().splitlines()))
+
+        male_ratio = [x['male-count'] / (x['male-count'] + x['female-count']) if (x['male-count'] + x['female-count']) != 0 else 0.0 for x in image_file]
+        female_ratio = [x['female-count'] / (x['male-count'] + x['female-count']) if (x['male-count'] + x['female-count']) != 0 else 0.0 for x in image_file]
+        
+
+        country_gender_ratio[country_name]['male_ratio'].extend(male_ratio)
+        country_gender_ratio[country_name]['female_ratio'].extend(female_ratio)
+
+
+    return country_gender_ratio
+
+
+
 def assign_grids(country_stats:Dict[str,Any])->List[Any]:
 
     # Determining max value for axes
@@ -309,8 +338,7 @@ def assign_grids(country_stats:Dict[str,Any])->List[Any]:
     return grid
 
 
-# TODO: make this less complex, divide into smaller pieces
-def plot_male_female_per_image(countries:List[str], ax:Axes)->None:
+def plot_male_female_per_image(countries:List[str], ax:Axes, flags_per_row:int = 6, flags_per_col:int =5, draw_box:bool=False, zoom:float=0.12 )->None:
 
     # Calculate avg. males and females on images
     country_stats={k:(
@@ -353,8 +381,8 @@ def plot_male_female_per_image(countries:List[str], ax:Axes)->None:
             start_x = col_idx
             start_y = row_idx
 
-            flags_per_row = 6
-            flags_per_col = 5
+            # flags_per_row = 6
+            # flags_per_col = 5
             max_flags_per_cell = flags_per_row * flags_per_col
 
             num_flags = min(len(cell), max_flags_per_cell)
@@ -389,11 +417,11 @@ def plot_male_female_per_image(countries:List[str], ax:Axes)->None:
                     status = freedom_status.get(clean_code, 'Unknown')
                     border_color = freedom_colors.get(status, (0.5, 0.5, 0.5, 1))
 
-                    flag_img = fetch_flag_image_with_border(country_code, border_color)
-                    imagebox = OffsetImage(flag_img, zoom=0.12)
+                    flag_img = fetch_flag_image_with_border(country_code, border_color, draw_box)
+                    imagebox = OffsetImage(flag_img, zoom=zoom)
                     ab = AnnotationBbox(imagebox, (x_pos, y_pos), frameon=False)
                     ax.add_artist(ab)
-                except Exception as e:
+                except:
                     print(f"Error processing {country_code}:")
                     # print(f"Error details: {str(e)}")
                     continue
@@ -415,15 +443,72 @@ def plot_male_female_per_image(countries:List[str], ax:Axes)->None:
     ax.set_xticklabels(ax.get_xticklabels(),**tick_text)
     ax.set_yticklabels(ax.get_yticklabels(),**tick_text)
     
-    legend_elements = [
-        Patch(facecolor=freedom_colors['F'], label='Free'),
-        Patch(facecolor=freedom_colors['PF'], label='Partly Free'),
-        Patch(facecolor=freedom_colors['NF'], label='Not Free'),
-        # Patch(facecolor=freedom_colors['Unknown'], label='No Data')
-    ]
+    if draw_box:
+        legend_elements = [
+            Patch(facecolor=freedom_colors['F'], label='Free'),
+            Patch(facecolor=freedom_colors['PF'], label='Partly Free'),
+            Patch(facecolor=freedom_colors['NF'], label='Not Free'),
+            # Patch(facecolor=freedom_colors['Unknown'], label='No Data')
+        ]
 
-    plt.legend(handles=legend_elements, ncol=1, 
-            bbox_to_anchor=(1, 0.00),  # x=0.98 for slight padding from right, y=0.15 to be above x-axis
-            loc='lower right', 
-            fontsize=12,
-            markerfirst=False)
+        plt.legend(handles=legend_elements, ncol=1, 
+                bbox_to_anchor=(1, 0.00),  # x=0.98 for slight padding from right, y=0.15 to be above x-axis
+                loc='lower right', 
+                fontsize=12,
+                markerfirst=False)
+
+
+def plot_country_genders_ratios(country_iso_codes:List[str], ax_list:List[Axes], fig, data_dir:str ,max_people:int=np.inf):
+    
+    assert len(country_iso_codes)==len(ax_list), 'length of the countries and axes are not matching'
+
+    for idx, iso3 in enumerate(country_iso_codes):
+
+        gender_dists = get_gender_ratios(get_countries(data_dir, include=[f'{iso3}_']))
+        male_dist = list(map(lambda x:min(x,max_people), gender_dists[iso3]['male_ratio']))
+        female_dist = list(map(lambda x:min(x,max_people), gender_dists[iso3]['female_ratio']))
+
+        # male_counts = dict(sorted(Counter(male_dist).items()))
+        # female_counts = dict(sorted(Counter(female_dist).items()))
+
+        ax = ax_list[idx]
+        # sns.histplot(male_dist, color="#51a1de", label='Male Ratio',binwidth=0.05, ax=ax, alpha=0.5)
+        sns.histplot(female_dist, color='#f5a9b8', label='Female Ratio', binwidth=0.05, ax=ax, alpha=0.7)
+
+        # xticks= ax.get_xticks()
+        # ax.set_xticklabels([int(i) if i==int(i) else '' for i in xticks ])
+        # from matplotlib.ticker import FuncFormatter
+        # ax.xaxis.set_major_formatter(FuncFormatter(
+        #     lambda x, _: f"{int(x)}" if x.is_integer() else ""
+        # ))
+        # from matplotlib.ticker import MaxNLocator
+        # ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+
+        plt.setp(ax.get_xticklabels(), **tick_text)
+        plt.setp(ax.get_yticklabels(), **tick_text)
+
+        ax.set_yscale('log')
+        # ax.set_xlabel('# of People per Image',**label_text)
+        ax.set_ylabel('# of Images',**label_text)
+        title = ax.set_title(f'{iso3} Images Gender Distribution',**title_text)
+
+        fig.canvas.draw()
+        bbox = title.get_window_extent(renderer=fig.canvas.get_renderer())
+        inv = ax.transAxes.inverted()
+        x0, y0 = inv.transform((bbox.x0, bbox.y0))
+
+
+        flag_img = fetch_flag_image(get_alpha2_code(iso3))
+        imagebox = OffsetImage(flag_img, zoom=0.09)
+
+        margin = 0.01 
+        ab = AnnotationBbox(imagebox,
+            (x0 - margin,    y0 + 0.03),
+            box_alignment=(1, 0.5),
+            frameon=False,xycoords="axes fraction")
+        ax.add_artist(ab)
+
+
+        # print(title.get_position())
+        ax.legend()
+    # ax.set_xlabel('# of People per Image',**label_text)
