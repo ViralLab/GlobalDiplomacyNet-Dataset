@@ -15,7 +15,7 @@
         "oecd": 1,
         "acp": 0
     },
-    "BHM": {
+    "BHS": {
         "country_name": "Bahamas",
         "ccode": "BHS",
         "COWcode": 31,
@@ -31,7 +31,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "HAI": {
+    "HTI": {
         "country_name": "Haiti",
         "ccode": "HTI",
         "COWcode": 41,
@@ -55,7 +55,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "TRI": {
+    "TTO": {
         "country_name": "Trinidad and Tobago",
         "ccode": "TTO",
         "COWcode": 52,
@@ -63,7 +63,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "BAR": {
+    "BRB": {
         "country_name": "Barbados",
         "ccode": "BRB",
         "COWcode": 53,
@@ -79,7 +79,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "GRN": {
+    "GRD": {
         "country_name": "Grenada",
         "ccode": "GRD",
         "COWcode": 55,
@@ -87,7 +87,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "SLU": {
+    "LCA": {
         "country_name": "St. Lucia",
         "ccode": "LCA",
         "COWcode": 56,
@@ -95,7 +95,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "SVG": {
+    "VCT": {
         "country_name": "St. Vincent and the Grenadines",
         "ccode": "VCT",
         "COWcode": 57,
@@ -103,7 +103,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "AAB": {
+    "ATG": {
         "country_name": "Antigua & Barbuda",
         "ccode": "ATG",
         "COWcode": 58,
@@ -111,7 +111,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "SKN": {
+    "KNA": {
         "country_name": "St. Kitts and Nevis",
         "ccode": "KNA",
         "COWcode": 60,
@@ -135,7 +135,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "GUA": {
+    "GTM": {
         "country_name": "Guatemala",
         "ccode": "GTM",
         "COWcode": 90,
@@ -143,7 +143,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "HON": {
+    "HND": {
         "country_name": "Honduras",
         "ccode": "HND",
         "COWcode": 91,
@@ -151,7 +151,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "SAL": {
+    "SLV": {
         "country_name": "El Salvador",
         "ccode": "SLV",
         "COWcode": 92,
@@ -167,7 +167,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "COS": {
+    "CRI": {
         "country_name": "Costa Rica",
         "ccode": "CRI",
         "COWcode": 94,
@@ -247,7 +247,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "PAR": {
+    "PRY": {
         "country_name": "Paraguay",
         "ccode": "PRY",
         "COWcode": 150,
@@ -271,7 +271,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "URU": {
+    "URY": {
         "country_name": "Uruguay",
         "ccode": "URY",
         "COWcode": 165,
@@ -279,7 +279,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "UKG": {
+    "GBR": {
         "country_name": "United Kingdom",
         "ccode": "GBR",
         "COWcode": 200,
@@ -287,7 +287,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "IRE": {
+    "IRL": {
         "country_name": "Ireland",
         "ccode": "IRL",
         "COWcode": 205,
@@ -295,7 +295,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "NTH": {
+    "NLD": {
         "country_name": "Netherlands",
         "ccode": "NLD",
         "COWcode": 210,
@@ -319,7 +319,7 @@
         "oecd": 1,
         "acp": 0
     },
-    "FRN": {
+    "FRA": {
         "country_name": "France",
         "ccode": "FRA",
         "COWcode": 220,
@@ -327,7 +327,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "MNC": {
+    "MCO": {
         "country_name": "Monaco",
         "ccode": "MCO",
         "COWcode": 221,
@@ -351,7 +351,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "SPN": {
+    "ESP": {
         "country_name": "Spain",
         "ccode": "ESP",
         "COWcode": 230,
@@ -367,7 +367,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "POR": {
+    "PRT": {
         "country_name": "Portugal",
         "ccode": "PRT",
         "COWcode": 235,
@@ -375,30 +375,15 @@
         "oecd": 0,
         "acp": 0
     },
-    "GMY": {
+    "DEU": {
         "country_name": "Germany",
         "ccode": "DEU",
         "COWcode": 255,
         "ccode2": "DE",
-        "oecd": 0,
+        "oecd": 1,
         "acp": 0
     },
-    "GFR": {
-        "country_name": "German Federal Republic",
-        "ccode": "DEU",
-        "COWcode": 260,
-        "ccode2": "DE",
-        "oecd": 0,
-        "acp": 0
-    },
-    "GDR": {
-        "country_name": "German Democratic Republic",
-        "ccode": "DEU",
-        "COWcode": 265,
-        "ccode2": "DE",
-        "oecd": 0,
-        "acp": 0
-    },
+
     "POL": {
         "country_name": "Poland",
         "ccode": "POL",
@@ -409,7 +394,7 @@
     },
     "AUS": {
         "country_name": "Austria",
-        "ccode": "AUT",
+        "ccode": "AUS",
         "COWcode": 305,
         "ccode2": "AT",
         "oecd": 1,
@@ -433,13 +418,13 @@
     },
     "CZR": {
         "country_name": "Czech Republic",
-        "ccode": "CZE",
+        "ccode": "CZR",
         "COWcode": 316,
         "ccode2": "CZ",
         "oecd": 0,
         "acp": 0
     },
-    "SLO": {
+    "SVK": {
         "country_name": "Slovakia",
         "ccode": "SVK",
         "COWcode": 317,
@@ -471,7 +456,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "MNG": {
+    "MNE": {
         "country_name": "Montenegro",
         "ccode": "MNE",
         "COWcode": 341,
@@ -479,7 +464,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "MAC": {
+    "MKD": {
         "country_name": "Macedonia",
         "ccode": "MKD",
         "COWcode": 343,
@@ -487,7 +472,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "CRO": {
+    "HRV": {
         "country_name": "Croatia",
         "ccode": "HRV",
         "COWcode": 344,
@@ -495,7 +480,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "YUG": {
+    "SRB": {
         "country_name": "Yugoslavia/Serbia",
         "ccode": "SRB",
         "COWcode": 345,
@@ -543,7 +528,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "BUL": {
+    "BGR": {
         "country_name": "Bulgaria",
         "ccode": "BGR",
         "COWcode": 355,
@@ -551,7 +536,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "MLD": {
+    "MDA": {
         "country_name": "Moldova",
         "ccode": "MDA",
         "COWcode": 359,
@@ -559,7 +544,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "ROM": {
+    "ROU": {
         "country_name": "Romania",
         "ccode": "ROU",
         "COWcode": 360,
@@ -568,7 +553,7 @@
         "acp": 0
     },
     "RUS": {
-        "country_name": "Russia",
+        "country_name": "Russian Federation",
         "ccode": "RUS",
         "COWcode": 365,
         "ccode2": "RU",
@@ -583,7 +568,7 @@
         "oecd": 1,
         "acp": 0
     },
-    "LAT": {
+    "LVA": {
         "country_name": "Latvia",
         "ccode": "LVA",
         "COWcode": 367,
@@ -591,7 +576,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "LIT": {
+    "LTU": {
         "country_name": "Lithuania",
         "ccode": "LTU",
         "COWcode": 368,
@@ -623,7 +608,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "GRG": {
+    "GEO": {
         "country_name": "Georgia",
         "ccode": "GEO",
         "COWcode": 372,
@@ -647,7 +632,7 @@
         "oecd": 1,
         "acp": 0
     },
-    "SWD": {
+    "SWE": {
         "country_name": "Sweden",
         "ccode": "SWE",
         "COWcode": 380,
@@ -663,7 +648,7 @@
         "oecd": 1,
         "acp": 0
     },
-    "DEN": {
+    "DNK": {
         "country_name": "Denmark",
         "ccode": "DNK",
         "COWcode": 390,
@@ -679,7 +664,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "CAP": {
+    "CPV": {
         "country_name": "Cape Verde",
         "ccode": "CPV",
         "COWcode": 402,
@@ -703,7 +688,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "EQG": {
+    "GNQ": {
         "country_name": "Equatorial Guinea",
         "ccode": "GNQ",
         "COWcode": 411,
@@ -711,7 +696,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "GAM": {
+    "GMB": {
         "country_name": "Gambia",
         "ccode": "GMB",
         "COWcode": 420,
@@ -743,7 +728,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "MAA": {
+    "MRT": {
         "country_name": "Mauritania",
         "ccode": "MRT",
         "COWcode": 435,
@@ -751,7 +736,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "NIR": {
+    "NER": {
         "country_name": "Niger",
         "ccode": "NER",
         "COWcode": 436,
@@ -759,7 +744,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "CDI": {
+    "CIV": {
         "country_name": "Ivory Coast",
         "ccode": "CIV",
         "COWcode": 437,
@@ -767,7 +752,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "GUI": {
+    "GIN": {
         "country_name": "Guinea",
         "ccode": "GIN",
         "COWcode": 438,
@@ -775,7 +760,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "BFO": {
+    "BFA": {
         "country_name": "Burkina Faso",
         "ccode": "BFA",
         "COWcode": 439,
@@ -791,7 +776,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "SIE": {
+    "SLE": {
         "country_name": "Sierra Leone",
         "ccode": "SLE",
         "COWcode": 451,
@@ -815,7 +800,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "CAO": {
+    "CMR": {
         "country_name": "Cameroon",
         "ccode": "CMR",
         "COWcode": 471,
@@ -823,7 +808,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "NIG": {
+    "NGA": {
         "country_name": "Nigeria",
         "ccode": "NGA",
         "COWcode": 475,
@@ -839,7 +824,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "CEN": {
+    "CAF": {
         "country_name": "Central African Republic",
         "ccode": "CAF",
         "COWcode": 482,
@@ -847,7 +832,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "CHA": {
+    "TCD": {
         "country_name": "Chad",
         "ccode": "TCD",
         "COWcode": 483,
@@ -855,7 +840,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "CON": {
+    "COG": {
         "country_name": "Congo",
         "ccode": "COG",
         "COWcode": 484,
@@ -863,7 +848,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "DRC": {
+    "COD": {
         "country_name": "Democratic Republic of the Congo",
         "ccode": "COD",
         "COWcode": 490,
@@ -887,7 +872,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "TAZ": {
+    "TZA": {
         "country_name": "Tanzania",
         "ccode": "TZA",
         "COWcode": 510,
@@ -903,7 +888,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "BUI": {
+    "BDI": {
         "country_name": "Burundi",
         "ccode": "BDI",
         "COWcode": 516,
@@ -951,7 +936,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "ANG": {
+    "AGO": {
         "country_name": "Angola",
         "ccode": "AGO",
         "COWcode": 540,
@@ -959,7 +944,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "MZM": {
+    "MOZ": {
         "country_name": "Mozambique",
         "ccode": "MOZ",
         "COWcode": 541,
@@ -967,7 +952,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "ZAM": {
+    "ZMB": {
         "country_name": "Zambia",
         "ccode": "ZMB",
         "COWcode": 551,
@@ -975,7 +960,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "ZIM": {
+    "ZWE": {
         "country_name": "Zimbabwe",
         "ccode": "ZWE",
         "COWcode": 552,
@@ -983,7 +968,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "MAW": {
+    "MWI": {
         "country_name": "Malawi",
         "ccode": "MWI",
         "COWcode": 553,
@@ -991,7 +976,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "SAF": {
+    "ZAF": {
         "country_name": "South Africa",
         "ccode": "ZAF",
         "COWcode": 560,
@@ -1007,7 +992,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "LES": {
+    "LSO": {
         "country_name": "Lesotho",
         "ccode": "LSO",
         "COWcode": 570,
@@ -1015,7 +1000,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "BOT": {
+    "BWA": {
         "country_name": "Botswana",
         "ccode": "BWA",
         "COWcode": 571,
@@ -1023,7 +1008,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "SWA": {
+    "SWZ": {
         "country_name": "Swaziland",
         "ccode": "SWZ",
         "COWcode": 572,
@@ -1031,7 +1016,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "MAG": {
+    "MDG": {
         "country_name": "Madagascar",
         "ccode": "MDG",
         "COWcode": 580,
@@ -1047,7 +1032,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "MAS": {
+    "MUS": {
         "country_name": "Mauritius",
         "ccode": "MUS",
         "COWcode": 590,
@@ -1071,7 +1056,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "ALG": {
+    "DZA": {
         "country_name": "Algeria",
         "ccode": "DZA",
         "COWcode": 615,
@@ -1087,7 +1072,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "LIB": {
+    "LBY": {
         "country_name": "Libya",
         "ccode": "LBY",
         "COWcode": 620,
@@ -1095,7 +1080,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "SUD": {
+    "SDN": {
         "country_name": "Sudan",
         "ccode": "SDN",
         "COWcode": 625,
@@ -1151,7 +1136,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "LEB": {
+    "LBN": {
         "country_name": "Lebanon",
         "ccode": "LBN",
         "COWcode": 660,
@@ -1183,14 +1168,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "YAR": {
-        "country_name": "Yemen Arab Republic",
-        "ccode": "YEM",
-        "COWcode": 678,
-        "ccode2": "YE",
-        "oecd": 0,
-        "acp": 0
-    },
+
     "YEM": {
         "country_name": "Yemen",
         "ccode": "YEM",
@@ -1199,15 +1177,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "YPR": {
-        "country_name": "Yemen People's Republic",
-        "ccode": "N/A",
-        "COWcode": 680,
-        "ccode2": "Unknown",
-        "oecd": 0,
-        "acp": 0
-    },
-    "KUW": {
+    "KWT": {
         "country_name": "Kuwait",
         "ccode": "KWT",
         "COWcode": 690,
@@ -1215,7 +1185,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "BAH": {
+    "BHR": {
         "country_name": "Bahrain",
         "ccode": "BHR",
         "COWcode": 692,
@@ -1231,7 +1201,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "UAE": {
+    "ARE": {
         "country_name": "United Arab Emirates",
         "ccode": "ARE",
         "COWcode": 696,
@@ -1239,7 +1209,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "OMA": {
+    "OMN": {
         "country_name": "Oman",
         "ccode": "OMN",
         "COWcode": 698,
@@ -1263,7 +1233,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "TAJ": {
+    "TJK": {
         "country_name": "Tajikistan",
         "ccode": "TJK",
         "COWcode": 702,
@@ -1271,7 +1241,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "KYR": {
+    "KGZ": {
         "country_name": "Kyrgyzstan",
         "ccode": "KGZ",
         "COWcode": 703,
@@ -1287,7 +1257,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "KZK": {
+    "KAZ": {
         "country_name": "Kazakhstan",
         "ccode": "KAZ",
         "COWcode": 705,
@@ -1311,7 +1281,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "TAW": {
+    "TWN": {
         "country_name": "Taiwan",
         "ccode": "TWN",
         "COWcode": 713,
@@ -1335,7 +1305,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "ROK": {
+    "KOR": {
         "country_name": "South Korea",
         "ccode": "KOR",
         "COWcode": 732,
@@ -1359,7 +1329,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "BHU": {
+    "BTN": {
         "country_name": "Bhutan",
         "ccode": "BTN",
         "COWcode": 760,
@@ -1375,7 +1345,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "BNG": {
+    "BGD": {
         "country_name": "Bangladesh",
         "ccode": "BGD",
         "COWcode": 771,
@@ -1383,7 +1353,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "MYA": {
+    "MMR": {
         "country_name": "Myanmar",
         "ccode": "MMR",
         "COWcode": 775,
@@ -1391,7 +1361,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "SRI": {
+    "LKA": {
         "country_name": "Sri Lanka",
         "ccode": "LKA",
         "COWcode": 780,
@@ -1399,7 +1369,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "MAD": {
+    "MDV": {
         "country_name": "Maldives",
         "ccode": "MDV",
         "COWcode": 781,
@@ -1407,7 +1377,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "NEP": {
+    "NPL": {
         "country_name": "Nepal",
         "ccode": "NPL",
         "COWcode": 790,
@@ -1415,7 +1385,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "THI": {
+    "THA": {
         "country_name": "Thailand",
         "ccode": "THA",
         "COWcode": 800,
@@ -1423,7 +1393,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "CAM": {
+    "KHM": {
         "country_name": "Cambodia",
         "ccode": "KHM",
         "COWcode": 811,
@@ -1439,7 +1409,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "DRV": {
+    "VNM": {
         "country_name": "Vietnam",
         "ccode": "VNM",
         "COWcode": 816,
@@ -1463,7 +1433,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "SIN": {
+    "SGP": {
         "country_name": "Singapore",
         "ccode": "SGP",
         "COWcode": 830,
@@ -1471,7 +1441,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "BRU": {
+    "BRN": {
         "country_name": "Brunei",
         "ccode": "BRN",
         "COWcode": 835,
@@ -1479,7 +1449,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "PHI": {
+    "PHL": {
         "country_name": "Philippines",
         "ccode": "PHL",
         "COWcode": 840,
@@ -1487,7 +1457,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "INS": {
+    "IDN": {
         "country_name": "Indonesia",
         "ccode": "IDN",
         "COWcode": 850,
@@ -1495,7 +1465,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "ETM": {
+    "TLS": {
         "country_name": "East Timor",
         "ccode": "TLS",
         "COWcode": 860,
@@ -1503,7 +1473,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "AUL": {
+    "AUS": {
         "country_name": "Australia",
         "ccode": "AUS",
         "COWcode": 900,
@@ -1519,7 +1489,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "NEW": {
+    "NZL": {
         "country_name": "New Zealand",
         "ccode": "NZL",
         "COWcode": 920,
@@ -1527,7 +1497,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "VAN": {
+    "VUT": {
         "country_name": "Vanuatu",
         "ccode": "VUT",
         "COWcode": 935,
@@ -1535,7 +1505,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "SOL": {
+    "SLB": {
         "country_name": "Solomon Islands",
         "ccode": "SLB",
         "COWcode": 940,
@@ -1575,7 +1545,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "NAU": {
+    "NRU": {
         "country_name": "Nauru",
         "ccode": "NRU",
         "COWcode": 970,
@@ -1583,7 +1553,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "MSI": {
+    "MHL": {
         "country_name": "Marshall Islands",
         "ccode": "MHL",
         "COWcode": 983,
@@ -1591,7 +1561,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "PAL": {
+    "PLW": {
         "country_name": "Palau",
         "ccode": "PLW",
         "COWcode": 986,
@@ -1657,3 +1627,5 @@
     }
     
 }
+
+
