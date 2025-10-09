@@ -1,0 +1,9 @@
+langcodes
+matplotlib
+numpy
+pandas
+Pillow
+pycountry
+Requests
+seaborn
+tqdm
