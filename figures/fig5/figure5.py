@@ -3,10 +3,16 @@ from typing import Dict, List, Any, Tuple
 from collections import defaultdict, Counter
 import matplotlib.pyplot as plt
 from matplotlib.axes import Axes
+from matplotlib.colors import LogNorm
+from matplotlib.gridspec import GridSpec
 import seaborn as sns
 import numpy as np
 import pickle
 from tqdm import tqdm
+import warnings 
+
+warnings.filterwarnings('ignore')
+
 font_dict = {'size':12}
 tick_dict = {'size':10}
 
@@ -114,7 +120,7 @@ def get_org_mentions(countries:List[str], orgs:List[tuple],data_directory:str):
     for c in tqdm(countries):
         country_org_mentions[c].update({k:0 for k in org_labels}) # initialization
         
-        for country_dirs in get_countries(data_directory, c):
+        for country_dirs in get_countries(data_directory, include=[c]):
 
             country_jsonl = list(map(json.loads,open(f'{country_dirs}/news.jsonl','r').read().splitlines()))
 
@@ -137,11 +143,14 @@ def plot_org_heatmap(countries:List[tuple], orgs:List[tuple], ax:Axes, data_dire
 
     org_order = sorted(org_labels)
     # sorting for better look
-    heatmap_values = dict(sorted(map(lambda x:(x[0],dict(sorted(x[1].items()))),heatmap_values.items())))
+    heatmap_values = dict(sorted(map(lambda x:(g20_name_lookup[x[0]],dict(sorted(x[1].items()))),heatmap_values.items())))
     data = np.array(list(map(lambda x:list(x.values()),heatmap_values.values())))
     mask = data==0
     # TODO change labels to full names with a harcoded dict
-    labels = list(map(lambda x:g20_name_lookup[x],heatmap_values.keys()))
-    sns.heatmap(data,yticklabels=labels, xticklabels= org_order, cmap='YlGnBu',square=True,fmt='.2f',annot=True,mask=mask, ax=ax)
-    ax.set_yticklabels(ax.get_yticklabels(), rotation=0)
+    labels = list(heatmap_values.keys())
+    sns.heatmap(data,yticklabels=labels, xticklabels= org_order, 
+                cmap='YlGnBu',square=False,fmt='.1f',annot=True, mask=mask, 
+                norm=LogNorm(vmin=1e-1+1e-5, vmax=100), ax=ax)
+    ax.set_yticklabels(ax.get_yticklabels(), rotation=0, **tick_dict)
+    ax.set_xticklabels(ax.get_xticklabels(), **tick_dict)
 
