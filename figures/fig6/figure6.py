@@ -473,7 +473,7 @@ def plot_country_genders_ratios(country_iso_codes:List[str], ax_list:List[Axes],
 
         ax = ax_list[idx]
         # sns.histplot(male_dist, color="#51a1de", label='Male Ratio',binwidth=0.05, ax=ax, alpha=0.5)
-        sns.histplot(female_dist, color='#f5a9b8', label='Female Ratio', binwidth=0.05, ax=ax, alpha=0.7)
+        sns.histplot(female_dist, color='#f5a9b8', binwidth=0.05, ax=ax, alpha=0.7)
 
         # xticks= ax.get_xticks()
         # ax.set_xticklabels([int(i) if i==int(i) else '' for i in xticks ])
@@ -490,7 +490,7 @@ def plot_country_genders_ratios(country_iso_codes:List[str], ax_list:List[Axes],
         ax.set_yscale('log')
         # ax.set_xlabel('# of People per Image',**label_text)
         ax.set_ylabel('# of Images',**label_text)
-        title = ax.set_title(f'{iso3} Images Gender Distribution',**title_text)
+        title = ax.set_title(f'{iso3} Images Female Ratio',**title_text)
 
         fig.canvas.draw()
         bbox = title.get_window_extent(renderer=fig.canvas.get_renderer())
@@ -511,4 +511,4 @@ def plot_country_genders_ratios(country_iso_codes:List[str], ax_list:List[Axes],
 
         # print(title.get_position())
         ax.legend()
-    # ax.set_xlabel('# of People per Image',**label_text)
+    ax.set_xlabel('Ratio',**label_text)
