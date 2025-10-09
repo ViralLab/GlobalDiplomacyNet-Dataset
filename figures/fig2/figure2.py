@@ -46,7 +46,7 @@ def get_country_date_series(country_directory:str)->List[str]:
 
 def group_date_series(dates_list:List[str])->Dict[str,int]:
     """Groups the date list into years"""
-    return dict(sorted(Counter(map(lambda x: datetime.strptime(x,'%Y/%m/%d').strftime('%Y'), dates_list)).items()))
+    return dict(sorted(Counter(map(lambda x: datetime.strptime(x,'%Y-%m-%d').strftime('%Y'), dates_list)).items()))
 
 def fill_year_dict(count_dict:dict, start:int, end:int=2024)->Dict[str,int]:
     for y in range(start,end+1):
