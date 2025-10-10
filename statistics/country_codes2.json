@@ -392,9 +392,9 @@
         "oecd": 1,
         "acp": 0
     },
-    "AUS": {
+    "AUT": {
         "country_name": "Austria",
-        "ccode": "AUS",
+        "ccode": "AUT",
         "COWcode": 305,
         "ccode2": "AT",
         "oecd": 1,
@@ -409,16 +409,8 @@
         "acp": 0
     },
     "CZE": {
-        "country_name": "Czechoslovakia",
-        "ccode": "N/A",
-        "COWcode": 315,
-        "ccode2": "Unknown",
-        "oecd": 1,
-        "acp": 0
-    },
-    "CZR": {
-        "country_name": "Czech Republic",
-        "ccode": "CZR",
+        "country_name": "Czechia",
+        "ccode": "CZE",
         "COWcode": 316,
         "ccode2": "CZ",
         "oecd": 0,
@@ -481,7 +473,7 @@
         "acp": 0
     },
     "SRB": {
-        "country_name": "Yugoslavia/Serbia",
+        "country_name": "Serbia",
         "ccode": "SRB",
         "COWcode": 345,
         "ccode2": "RS",
@@ -745,7 +737,7 @@
         "acp": 1
     },
     "CIV": {
-        "country_name": "Ivory Coast",
+        "country_name": "Côte d’Ivoire",
         "ccode": "CIV",
         "COWcode": 437,
         "ccode2": "CI",
@@ -1105,7 +1097,7 @@
         "acp": 0
     },
     "TUR": {
-        "country_name": "Turkey",
+        "country_name": "Turkiye",
         "ccode": "TUR",
         "COWcode": 640,
         "ccode2": "TR",
@@ -1627,5 +1619,6 @@
     }
     
 }
+
 
 
