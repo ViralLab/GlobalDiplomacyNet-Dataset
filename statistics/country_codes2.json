@@ -496,7 +496,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "SLV": {
+    "SVN": {
         "country_name": "Slovenia",
         "ccode": "SVN",
         "COWcode": 349,
@@ -1619,6 +1619,7 @@
     }
     
 }
+
 
 
 
