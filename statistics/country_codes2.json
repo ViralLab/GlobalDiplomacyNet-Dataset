@@ -1379,14 +1379,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "RVN": {
-        "country_name": "Republic of Vietnam",
-        "ccode": "N/A",
-        "COWcode": 817,
-        "ccode2": "Unknown",
-        "oecd": 0,
-        "acp": 0
-    },
+    
     "MYS": {
         "country_name": "Malaysia",
         "ccode": "MYS",
@@ -1589,6 +1582,7 @@
     }
     
 }
+
 
 
 
