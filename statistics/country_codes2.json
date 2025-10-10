@@ -1543,7 +1543,7 @@
     "COK": {
         "country_name": "Cook Islands",
         "ccode": "COK",
-        "COWcode": 990,
+        "COWcode": ,
         "ccode2": "CK",
         "oecd": 0,
         "acp": 1
@@ -1551,7 +1551,7 @@
     "NIU": {
         "country_name": "Niue",
         "ccode": "NIU",
-        "COWcode": 990,
+        "COWcode": ,
         "ccode2": "NU",
         "oecd": 0,
         "acp": 1
@@ -1582,6 +1582,7 @@
     }
     
 }
+
 
 
 
