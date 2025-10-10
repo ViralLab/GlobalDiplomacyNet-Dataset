@@ -172,7 +172,7 @@
         "ccode": "CRI",
         "COWcode": 94,
         "ccode2": "CR",
-        "oecd": 0,
+        "oecd": 1,
         "acp": 0
     },
     "PAN": {
@@ -864,14 +864,7 @@
         "oecd": 0,
         "acp": 1
     },
-    "ZAN": {
-        "country_name": "Zanzibar",
-        "ccode": "N/A",
-        "COWcode": 511,
-        "ccode2": "Unknown",
-        "oecd": 0,
-        "acp": 0
-    },
+    
     "BDI": {
         "country_name": "Burundi",
         "ccode": "BDI",
@@ -926,7 +919,7 @@
         "COWcode": 540,
         "ccode2": "AO",
         "oecd": 0,
-        "acp": 0
+        "acp": 1
     },
     "MOZ": {
         "country_name": "Mozambique",
@@ -1596,6 +1589,7 @@
     }
     
 }
+
 
 
 
