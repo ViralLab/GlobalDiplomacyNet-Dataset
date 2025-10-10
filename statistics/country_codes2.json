@@ -346,7 +346,7 @@
     "SWZ": {
         "country_name": "eSwatini",
         "ccode": "SWZ",
-        "COWcode": 970,
+        "COWcode": 572,
         "ccode2": "SZ",
         "oecd": 0,
         "acp": 1
@@ -457,7 +457,7 @@
         "acp": 0
     },
     "MKD": {
-        "country_name": "Macedonia",
+        "country_name": "North Macedonia",
         "ccode": "MKD",
         "COWcode": 343,
         "ccode2": "MK",
@@ -485,14 +485,6 @@
         "ccode": "BIH",
         "COWcode": 346,
         "ccode2": "BA",
-        "oecd": 0,
-        "acp": 0
-    },
-    "KOS": {
-        "country_name": "Kosovo",
-        "ccode": "N/A",
-        "COWcode": 347,
-        "ccode2": "Unknown",
         "oecd": 0,
         "acp": 0
     },
@@ -1000,14 +992,6 @@
         "oecd": 0,
         "acp": 1
     },
-    "SWZ": {
-        "country_name": "Swaziland",
-        "ccode": "SWZ",
-        "COWcode": 572,
-        "ccode2": "SZ",
-        "oecd": 0,
-        "acp": 1
-    },
     "MDG": {
         "country_name": "Madagascar",
         "ccode": "MDG",
@@ -1281,14 +1265,7 @@
         "oecd": 0,
         "acp": 0
     },
-    "KOR": {
-        "country_name": "Korea",
-        "ccode": "KOR",
-        "COWcode": 730,
-        "ccode2": "KR",
-        "oecd": 1,
-        "acp": 0
-    },
+
     "PRK": {
         "country_name": "North Korea",
         "ccode": "PRK",
@@ -1302,7 +1279,7 @@
         "ccode": "KOR",
         "COWcode": 732,
         "ccode2": "KR",
-        "oecd": 0,
+        "oecd": 1,
         "acp": 0
     },
     "JPN": {
@@ -1619,6 +1596,7 @@
     }
     
 }
+
 
 
 
