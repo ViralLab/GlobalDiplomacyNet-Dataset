@@ -1447,7 +1447,7 @@
         "ccode": "AUS",
         "COWcode": 900,
         "ccode2": "AU",
-        "oecd": 0,
+        "oecd": 1,
         "acp": 0
     },
     "PNG": {
@@ -1596,6 +1596,7 @@
     }
     
 }
+
 
 
 
