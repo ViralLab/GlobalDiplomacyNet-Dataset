@@ -2,7 +2,7 @@
 # GlobalDiplomacyNet 
 
 ## Overview
-This repository contains the reproduction code for the [paper_name](https://www.globaldiplomacy.net).
+This repository contains the reproduction code for the paper [Quantifying Global Foreign Affairs with a Multimodal Dataset of Diplomatic Websites](https://www.globaldiplomacy.net) by Nihat Mugurtay, Kaan Guray Sirin , Mehrdad Heshmat Najafabad, Ahmet Taha Kahya, Fazli Goktug Yilmaz , Yasser Zouzou, Batuhan Bahceci , Ayca Demir , Dogukan Tosun, Meltem Müftüler-Baç, Onur Varol.
 
 ## Reference to Dataset
 Detailed description about the data can be found on [Harvard Dataverse](https://doi.org/10.7910/DVN/OFN15B). Please refer to the dataset’s README or the journal paper for any details regarding data fields, folder structures or the content.
